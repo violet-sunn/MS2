@@ -37,7 +37,7 @@ while True:
     break
 
 #TASK 2
-#djsfkjsfklsjdfhkjsdfjkshfkjdhsfkjhskdjfhskjdfhskjdf
+
 #TASK 3
 def addition():
   from random import randint
