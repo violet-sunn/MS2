@@ -44,7 +44,8 @@ seti  = [{"interface": "Ethernet0", "ip": "1.1.1.1", "status": "up"},
 print(len(seti))
 print (f"Название: {seti[1]['interface']}, IP: {seti[1]['ip']}, Статус: {seti[1]['status']}")
 print(seti[3]['status'])
-'''#TASK 3
+
+'''TASK 3
 def addition():
   from random import randint
   a=randint(5,20)
@@ -67,3 +68,5 @@ def subtraction():
   user=int(input('Ваш ответ: '))
   return f'правильный ответ - {b-a}, ваш ответ - {user}, {correct(b-a,user)}'
 subtraction()
+
+'''
