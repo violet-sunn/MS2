@@ -39,3 +39,25 @@ while True:
 #TASK 2
 #djsfkjsfklsjdfhkjsdfjkshfkjdhsfkjhskdjfhskjdfhskjdf
 #TASK 3
+def addition():
+  from random import randint
+  a=randint(5,20)
+  b=randint(5,20)
+  print(f'{a} + {b} = ')
+  user=int(input('Ваш ответ: '))
+  return f'правильный ответ - {a+b}, ваш ответ - {user}, {correct(a+b,user)}'
+addition()
+def correct(i,j):
+  if i==j:
+    return 'correct'
+  else:
+    return 'incorrect'
+
+def subtraction():
+  from random import randint
+  a=randint(1,25)
+  b=randint(25,50)
+  print(f'{b} - {a} = ')
+  user=int(input('Ваш ответ: '))
+  return f'правильный ответ - {b-a}, ваш ответ - {user}, {correct(b-a,user)}'
+subtraction()
