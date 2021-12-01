@@ -1,4 +1,4 @@
-#TASK 1
+'''#TASK 1
 print('1)Create a new file\n2)Display the file\n3) Add a new item to the file\nMake a selection 1, 2 or 3\nEnter 0 to quit')
 
 def create():
@@ -35,7 +35,7 @@ while True:
   elif user==0:
     print('Bye!')
     break
-
+'''
 #TASK 2
 seti  = [{"interface": "Ethernet0", "ip": "1.1.1.1", "status": "up"},
 {"interface": "Ethernet1", "ip": "2.2.2.2", "status": "down"},
@@ -43,8 +43,8 @@ seti  = [{"interface": "Ethernet0", "ip": "1.1.1.1", "status": "up"},
 {"interface": "Serial1", "ip": "4.4.4.4", "status": "up"}]
 print(len(seti))
 print (f"Название: {seti[1]['interface']}, IP: {seti[1]['ip']}, Статус: {seti[1]['status']}")
-
-#TASK 3
+print(seti[3]['status'])
+'''#TASK 3
 def addition():
   from random import randint
   a=randint(5,20)
