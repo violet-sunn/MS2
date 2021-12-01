@@ -57,10 +57,11 @@ else:
     seti[0]['notes']='need to reset'
     print(seti[0])
 #task 2.5
+
 new_interface={"interface": "Serial0", "ip": "3.3.3.3", "status": "down"}
 seti.append(new_interface)
 seti[2]['ip']='3.3.3.4'
-print(seti)
+print(seti[2])
 #task 2.6
 
 #task 2.7
