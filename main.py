@@ -39,13 +39,14 @@ while True:
 #TASK 2
 seti  = [{"interface": "Ethernet0", "ip": "1.1.1.1", "status": "up"},
 {"interface": "Ethernet1", "ip": "2.2.2.2", "status": "down"},
-{"interface": "Serial0", "ip": "3.3.3.4", "status": "up"},
+{"interface": "Serial0", "ip": "3.3.3.3", "status": "up"},
 {"interface": "Serial1", "ip": "4.4.4.4", "status": "up"}]
 print(len(seti))
 print (f"Название: {seti[1]['interface']}, IP: {seti[1]['ip']}, Статус: {seti[1]['status']}")
 print(seti[3]['status'])
 new_interface={"interface": "Serial0", "ip": "3.3.3.3", "status": "down"}
 seti.append(new_interface)
+seti[2]['ip']='3.3.3.4'
 print(seti)
 
 
