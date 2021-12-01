@@ -1,13 +1,17 @@
+#TASK 1
 print('1)Create a new file\n2)Display the file\n3) Add a new item to the file\nMake a selection 1, 2 or 3\nEnter 0 to quit')
+
 def create():
   with open ('Subject.txt','w') as file:
     new_subject=input('Введите новый предмет')
     file.write(new_subject+'\n')
   return 'Успешно создано'
+
 def show():
   with open ('Subject.txt','r') as file:
     lines=file.read()
   return f'В файле находится: {lines}'
+
 def add():
   with open ('Subject.txt','r') as file:
     lines=file.read()
@@ -31,3 +35,7 @@ while True:
   elif user==0:
     print('Bye!')
     break
+
+#TASK 2
+
+#TASK 3
