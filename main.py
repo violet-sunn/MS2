@@ -42,11 +42,14 @@ seti  = [{"interface": "Ethernet0", "ip": "1.1.1.1", "status": "up"},
 {"interface": "Serial0", "ip": "3.3.3.3", "status": "up"},
 {"interface": "Serial1", "ip": "4.4.4.4", "status": "up"}]
 #task 2.1
-print(len(seti))
+print(f'Общее количество интерфейсов {len(seti)}')
+
 #task 2.2
-print (f"Название: {seti[1]['interface']}, IP: {seti[1]['ip']}, Статус: {seti[1]['status']}")
+print (f"Информация о втором интерфейсе:\nНазвание: {seti[1]['interface']}, IP: {seti[1]['ip']}, Статус: {seti[1]['status']}")
+
 #task 2.3
-print(seti[3]['status'])
+print(f"Статус последнего интерфейса: {seti[3]['status']}")
+
 #task 2.4
 if 'notes' in seti[0]:
     print(seti[0]['notes'])
@@ -59,11 +62,12 @@ seti.append(new_interface)
 seti[2]['ip']='3.3.3.4'
 print(seti)
 #task 2.6
+
 #task 2.7
-seti[3]['status'] = 'down'
-print(seti[3])
+seti[3]["status"] = 'down'
+print (f"Название: {seti[3]['interface']}, IP: {seti[3]['ip']}, Статус: {seti[3]['status']}")
 del seti[3]
-print (seti)
+print(seti)
 
 
 
