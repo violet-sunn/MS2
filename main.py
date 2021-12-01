@@ -1,5 +1,5 @@
-'''#TASK 1
-print('1)Create a new file\n2)Display the file\n3) Add a new item to the file\nMake a selection 1, 2 or 3\nEnter 0 to quit')
+#TASK 1
+"""print('1)Create a new file\n2)Display the file\n3) Add a new item to the file\nMake a selection 1, 2 or 3\nEnter 0 to quit')
 
 def create():
   with open ('Subject.txt','w') as file:
@@ -35,17 +35,21 @@ while True:
   elif user==0:
     print('Bye!')
     break
-'''
+"""
 #TASK 2
 seti  = [{"interface": "Ethernet0", "ip": "1.1.1.1", "status": "up"},
 {"interface": "Ethernet1", "ip": "2.2.2.2", "status": "down"},
-{"interface": "Serial0", "ip": "3.3.3.3", "status": "up"},
+{"interface": "Serial0", "ip": "3.3.3.4", "status": "up"},
 {"interface": "Serial1", "ip": "4.4.4.4", "status": "up"}]
 print(len(seti))
 print (f"Название: {seti[1]['interface']}, IP: {seti[1]['ip']}, Статус: {seti[1]['status']}")
 print(seti[3]['status'])
+new_interface={"interface": "Serial0", "ip": "3.3.3.3", "status": "down"}
+seti.append(new_interface)
+print(seti)
 
-'''TASK 3
+
+"""#TASK 3
 def addition():
   from random import randint
   a=randint(5,20)
@@ -68,5 +72,4 @@ def subtraction():
   user=int(input('Ваш ответ: '))
   return f'правильный ответ - {b-a}, ваш ответ - {user}, {correct(b-a,user)}'
 subtraction()
-
-'''
+"""
