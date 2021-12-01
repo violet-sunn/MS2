@@ -41,13 +41,23 @@ seti  = [{"interface": "Ethernet0", "ip": "1.1.1.1", "status": "up"},
 {"interface": "Ethernet1", "ip": "2.2.2.2", "status": "down"},
 {"interface": "Serial0", "ip": "3.3.3.3", "status": "up"},
 {"interface": "Serial1", "ip": "4.4.4.4", "status": "up"}]
+#task 2.1
 print(len(seti))
+#task 2.2
 print (f"Название: {seti[1]['interface']}, IP: {seti[1]['ip']}, Статус: {seti[1]['status']}")
+#task 2.3
 print(seti[3]['status'])
+#task 2.5
 new_interface={"interface": "Serial0", "ip": "3.3.3.3", "status": "down"}
 seti.append(new_interface)
 seti[2]['ip']='3.3.3.4'
 print(seti)
+#task 2.7
+seti[3]["status"] = 'down'
+print (f"Название: {seti[3]['interface']}, IP: {seti[3]['ip']}, Статус: {seti[3]['status']}")
+del seti[3]
+print(seti)
+
 
 
 """#TASK 3
